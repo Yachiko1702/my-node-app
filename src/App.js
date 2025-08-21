@@ -105,31 +105,7 @@ function Achievements() {
 }
 
 
-function Hobbies() {
-  return (
-    <div className="page">
-      <h2 class='ach'>Hobbies</h2>
-      <div className="hobbies-container">
-        <div className="hobby-box">
-          <img src="/images/images.jfif" alt="Gaming" />
-          <p>Gaming</p>
-        </div>
-        <div className="hobby-box">
-          <img src="/images/imahe.jfif" alt="Reading Manhwa" />
-          <p>Reading Manhwa</p>
-        </div>
-        <div className="hobby-box">
-          <img src="images/kdrama.jfif" alt="Watching Movies" />
-          <p>Watching Movies & Series</p>
-        </div>
-        <div className="hobby-box">
-          <img src="images/wk.jfif" alt="Watching Movies" />
-          <p>Working Out</p>
-        </div>
-      </div>
-    </div>
-  );
-}
+
 
 function Footer() {
   return (
