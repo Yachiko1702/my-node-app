@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import { NavLink } from 'react-router-dom';
-import bgImage from './assets/haynako.png';  
+import bgImage from './assets/background_solo.jpg';  
 
 
 
@@ -80,8 +80,8 @@ function Achievements() {
           <p>I was a consistent honor student during my elementary to high-school days.</p>
         </div>
         <div className="achievement-box">
-          <img src="/images/baseb.jpg" alt="Achievement 2" />
-          <p>I was able to compete at CLARAA meet at Bulacan in Baseball</p>
+          <img src="/images/profile.jpg" alt="Achievement 2" />
+          <p>Led a team of students in creating a web and app projects.</p>
         </div>
         <div className="achievement-box">
           <img src="/images/webss.png" alt="Achievement 3" />
@@ -90,22 +90,28 @@ function Achievements() {
             Click this link
           </a>
         </div>
-
-        <div className="achievement-box">
-          <img src="/images/download.jfif" alt="Achievement 4" />
-          <p>I read like 500+ manhwas, for me this is an achievement that everyone can't easily achieve.</p>
-        </div>
-        <div className="achievement-box">
-          <img src="/images/donwload11.jfif" alt="Achievement 5" />
-          <p>I became a ranker in this RPG.</p>
-        </div>
       </div>
     </div>
   );
 }
 
 
-
+function Hobbies() {
+  return (
+    <div className="page">
+      <h2 class='ach'>Resume</h2>
+      <div className="hobbies-container">
+        <div className="hobby-box">
+          <img src="/images/Marcus.jpg" alt="Gaming" />
+          <p>Resume</p>
+          <a href="https://www.canva.com/design/DAGkbKsR3oY/V5O334zLhewGab4zfs_iFQ/edit?utm_content=DAGkbKsR3oY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer">
+          Click this link!
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function Footer() {
   return (
@@ -117,7 +123,7 @@ function Footer() {
         <NavLink to="/">Home</NavLink>
         <NavLink to="/about">About Me</NavLink>
         <NavLink to="/achievements">Achievements</NavLink>
-        <NavLink to="/hobbies">Hobbies</NavLink>
+        <NavLink to="/hobbies">Resume</NavLink>
       </nav>
     </footer>
   );
