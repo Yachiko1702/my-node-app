@@ -49,37 +49,27 @@ function Home() {
       <h2 className="pangalan">MARCUS</h2>
 
       <section className="skills">
-        <h3>
-          <i className="fas fa-tools"></i> Skills
-        </h3>
+        <h3>Skills</h3>
         <ul>
-          <li><i className="fab fa-html5"></i> HTML</li>
-          <li><i className="fab fa-css3-alt"></i> CSS</li>
-          <li><i className="fab fa-js-square"></i> JavaScript</li>
-          <li><i className="fab fa-java"></i> Java</li>
+          <li>Proficient in HTML</li>
+          <li>Proficient in CSS</li>
+          <li>Proficient in JavaScript</li>
+          <li>Proficient in Java</li>
         </ul>
       </section>
 
       <section className="github">
-        <h3>
-          <i className="fab fa-github"></i> GitHub
-        </h3>
+        <h3>GitHub</h3>
         <p>
           Check out my repositories on{" "}
-          <a
-            href="https://github.com/your-username"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>.
         </p>
       </section>
 
       <section className="hosting">
-        <h3>
-          <i className="fas fa-globe"></i> Hosting
-        </h3>
+        <h3>Hosting</h3>
         <p>I can host and deploy websites.</p>
       </section>
     </div>
