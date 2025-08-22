@@ -1,233 +1,183 @@
-
-
-body {
+/* Global Reset & Base */
+body, html {
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background: url('assets/background_solo.jpg') no-repeat center;
-  color: #e5e5e5;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  overflow: hidden;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f0f0f0;
+  background: url("C:\Users\acer\myprofile1\public\images\background_solo.jpg");
+  overflow-x: hidden;
 }
 
+/* Container */
 .app-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  backdrop-filter: blur(4px);
 }
 
-.content {
-  flex: 1;
-}
-
+/* Header */
 .header {
-  background: url('assets/background_solo.jpg') no-repeat center;
-  padding: 1rem;
+  background: rgba(0, 0, 0, 0.7);
   text-align: center;
-  
+  padding: 1rem 0;
+  border-bottom: 2px solid #626264;
+  box-shadow: 0 0 10px #626264;
 }
 
 .header h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-.footer {
-  background: RGB(45, 55, 65);
-  padding: 1rem;
-  text-align: center;
-  margin-top: auto;
-  height: 60px;
-  display: flex;
-  flex-direction: column; 
-  justify-content: center;
-  align-items: center;
-  position: sticky;
-  bottom: 0;
-  width: 100%;
-}
-
-
-.footer nav {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center; 
-}
-
-.footer nav a {
+  font-size: 3rem;
   color: white;
-  text-decoration: none;
-  text-align: center;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  transition: all 0.3s ease;
+  text-shadow: 0 0 5px #626264, 0 0 10px #575758;
 }
 
-.footer nav a:hover {
-  background: #ff4655;
-  color: white;
-  box-shadow: 0 0 10px #ff4655;
+/* Content */
+.content {
+  flex: 1;
+  padding: 2rem;
+  backdrop-filter: blur(3px);
 }
 
-.footer nav a.active {
-  background: #ff4655;
-  color: white;
-  font-weight: bold;
-  box-shadow: 0 0 15px #ff4655;
-}
-a {
-  color: white;
-}
-
-a:hover {
-  background-color: blue;
-}
+/* Pages */
 .page {
+  background: url("C:\Users\acer\myprofile1\public\images\background_solo.jpg");
   padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(71, 71, 71, 0.4);
+  margin-bottom: 2rem;
 }
 
-.home {
+.page p {
   text-align: center;
-  padding: 2rem;
-}
-
-
-
-.profile-image {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  display: flex;
-  z-index: 2;
-  margin-left: -210px;
-  margin-top: -150px;
-  aspect-ratio: 1.1547;
-}
-
-
-
-.name {
-  position: absolute;
-  bottom: 80px;
-  font-size: 40px;
-  margin-left: -200px;
-  margin-bottom: 9px;
-}
-
-.pangalan {
-  font-size: 20vw;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-  background: url('assets/images.jfif') no-repeat center;
-  background-size: cover;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-top: 10px;
-}
-
-
-.aboutme {
-  text-align: center;
-  justify-content: center;
-  justify-items: center;
-  font-size: 20px;
-}
-
-
-.aboutme1 {
-  text-align: center;
-  justify-content: center;
-  justify-items: center;
   font-size: 30px;
 }
 
+/* Home */
+.home h2.pangalan {
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 20vh;
+  color: #ffffff;
+  text-shadow: 0 0 10px #626264, 0 0 20px #626264;
+}
+
+/* About Me */
+.aboutme {
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 0 0 8px #aaaaaa;
+}
+
+.aboutme1 p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ccc;
+  margin-top: 1rem;
+  text-align: justify;
+}
+
+/* Achievements */
+.ach {
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 0 0 8px #696a6d;
+  margin-bottom: 1rem;
+}
+
 .achievements-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
   justify-content: center;
-  align-items: stretch; 
-  padding: 20px;
 }
 
 .achievement-box {
-  width: 200px;
-  height: 250px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 2px solid white;
+  background: url("C:\Users\acer\myprofile1\public\images\background_solo.jpg");
+  border: 1px solid #a3a3a7;
+  padding: 1rem;
   border-radius: 10px;
-  padding: 20px;
+  width: 280px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.3s ease-in-out;
-}
-
-.achievement-box img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.achievement-box p {
-  margin-top: 10px;
-  color: white;
-  font-size: 16px;
+  box-shadow: 0 0 15px #626264;
+  transition: transform 0.3s ease;
 }
 
 .achievement-box:hover {
-  transform: scale(1.1);
-  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
 }
 
-.ach {
-  text-align: center;
-}
-
-.hobbies-container {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-.hobby-box {
-  width: 200px;
-  height: 250px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 2px solid white;
+.achievement-box img {
+  width: 100%;
+  height: auto;
   border-radius: 10px;
-  padding: 20px;
+}
+
+.achievement-box a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Hobbies / Resume */
+.page img {
+  max-width: 600px;
+  width: 100%;
+  display: block;
+  margin: 0 auto 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #a5a5a7;
+}
+
+/* Footer / Navigation */
+.footer {
+  background-color:rgba(71, 71, 71, 0.4);
+  padding: 1rem 0;
+  color: white;
   text-align: center;
+  border-top: 2px solid #8c8c8d;
+  box-shadow: 0 -1px 10px #a9a9aa;
+}
+.footer a {
+  color: white;
+}
+
+.footer nav {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  transition: transform 0.3s ease-in-out;
+  gap: 0.5rem;
 }
 
-.hobby-box img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
+.footer nav a {
+  color: whtie;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
 }
 
-.hobby-box p {
-  margin-top: 10px;
+.footer nav a:hover {
   color: white;
-  font-size: 16px;
+  transform: scale(1.1);
 }
 
-.hobby-box:hover {
-  transform: scale(1.1);
-  background: rgba(255, 255, 255, 0.2);
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+  border: 2px solid #7d7d7e;
+  box-shadow: 0 0 10px #787879;
+}
+
+.name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+/* NavLink active class (optional) */
+a.active {
+  color: white;
+  border-bottom: 2px solid white;
 }
