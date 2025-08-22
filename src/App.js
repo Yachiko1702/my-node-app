@@ -99,7 +99,7 @@ function Achievements() {
 function Hobbies() {
   return (
     <div className="page">
-          <img src="/assets/Marcus.jpg" alt="Gaming" />
+          <img src="assets/Marcus.jpg" alt="Gaming" />
           <p>Resume</p>
     </div>
   );
