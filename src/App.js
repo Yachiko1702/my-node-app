@@ -90,6 +90,10 @@ function Achievements() {
             Click this link
           </a>
         </div>
+        <div className="achievement-box">
+          <img src="/images/repo.png" alt="Achievement 3" />
+          <p>Compilation of websites that I did.</p>
+        </div>
       </div>
     </div>
   );
