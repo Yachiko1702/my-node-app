@@ -59,7 +59,7 @@ function AboutMe() {
     <div className="page">
       
       <h2 class='aboutme'>About Me</h2>
-      <div class='aboutme1'><p>I am Marcus Mallari, a 20-year-old BSIT student in my second year at Phinma Araullo University. Technology and innovation fascinate me, and I'm always eager to learn more about programming and web development.  
+      <div class='aboutme1'><p>I am Marcus Mallari, a 20-year-old BSIT student in my third year at Phinma Araullo University. Technology and innovation fascinate me, and I'm always eager to learn more about programming and web development.  
 
 In my free time, I love immersing myself in games, this is my way relieving stress. Reading manhwa is another passion of mine. I enjoy exploring different genres, from action to romcom. Watching movies and series is also a favorite pastime, as I appreciate twisted plots, well-developed characters, and the story. I also love to work out.  
 
@@ -99,16 +99,8 @@ function Achievements() {
 function Hobbies() {
   return (
     <div className="page">
-      <h2 class='ach'>Resume</h2>
-      <div className="hobbies-container">
-        <div className="hobby-box">
           <img src="/images/Marcus.jpg" alt="Gaming" />
           <p>Resume</p>
-          <a href="https://www.canva.com/design/DAGkbKsR3oY/V5O334zLhewGab4zfs_iFQ/edit?utm_content=DAGkbKsR3oY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer">
-          Click this link!
-          </a>
-        </div>
-      </div>
     </div>
   );
 }
